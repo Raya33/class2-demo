@@ -1,0 +1,35 @@
+ h2{
+     background-image:url("https://scx2.b-cdn.net/gfx/news/hires/2018/2-ocean.jpg" );
+     background-size: cover;
+     height: 100px;
+     color: beige;
+ }
+
+ img{
+     height: 100px;
+     border: beige;
+ }
+ 
+h1{
+background-color: blueviolet;
+color: cornsilk;
+
+}
+
+p{
+background-color: black;
+color: darkgray;
+}
+
+h3{
+    background-color: darkmagenta;
+    color: black;
+}
+
+footer{
+    background-image: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-920116,resizemode-1,msid-66950888/magazines/travel/wish-to-enjoy-a-spectacular-sunrise-sunset-well-tell-you-where-to-go.jpg");
+    background-size: cover;
+    height: 100px;
+    color: black;
+    
+}
