@@ -11,8 +11,10 @@
  }
  
 h1{
-background-color: blueviolet;
-color: cornsilk;
+    background-image: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-920116,resizemode-1,msid-66950888/magazines/travel/wish-to-enjoy-a-spectacular-sunrise-sunset-well-tell-you-where-to-go.jpg");
+    background-size: cover;
+    height: 100px;
+    color: black;
 
 }
 
@@ -27,9 +29,7 @@ h3{
 }
 
 footer{
-    background-image: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-920116,resizemode-1,msid-66950888/magazines/travel/wish-to-enjoy-a-spectacular-sunrise-sunset-well-tell-you-where-to-go.jpg");
-    background-size: cover;
-    height: 100px;
-    color: black;
+   background-color: cadetblue;
+   color:black;
     
 }
