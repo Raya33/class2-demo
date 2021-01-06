@@ -1,5 +1,5 @@
 'use Strict';
-score =0
+score = 0
 var answer = 'yes';
 var aswer = prompt('do you think that my name have story ?');
 if (answer.toLowerCase() === 'yes' || answer.toLowerCase === 'y') {
@@ -26,7 +26,7 @@ else {
 
 
 var answer3 = 'yes';
-var answer3 = prompt('Have I ever visited another continent?');
+var answer3 = prompt('Have I ever visited another country?');
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase === 'y') {
     alert('thats right');
     score++;
@@ -74,36 +74,79 @@ else {
 //     }
 // }
 // alert('the correct answer is 24');
-var answer6=24
-switch (Number(answer6)) {
-    case 4:
-        alert('thats correct!');
-        score++;
-        i=5;
-        break;
-    case(Number(answer6)<24);
-        alert('too low!');
-        break;
-    case(Number(answer6)) >24);
-         alert('too high!') ;
-         break;
-    default:
-        alert('inter a number');
-        break;
-}
 
 
 
+var answer6 = 24, attempts = 4, question6, flag = false;
 
-var cars =['Mercedes','FERRARI','PORSCHE','DACIA SANDERO'];
-var answer7=prompt('what is my favorite car?')
-for(var index=0;index<cars.length;index++){
-        if (cars[index]===answer7.toLowerCase()) {
-           alert('correct answer!');
-           score++;
-           break;
+while (attempts > 0 && !flag) {
+
+    question6 = prompt("Guess my Age ?");
+
+    switch (true) {
+        case (question6 == answer6):
+            alert('thats correct!');
+            flag = true;
+            score++;
+            break;
+        case (question6 < 10):
+            alert('too low!');
+            break;
+        case (question6 > 40):
+            alert('too high!');
+            break;
+
+        case (question6 > 20 && question6 < 30):
+            alert('Very Close! ');
+            break;
+        default:
+            alert('Inter a number');
+            break;
     }
+
+    // if(flag){
+
+    //     break;
+    // }
+
+    --attempts;
+
+    if (!flag) {
+        alert(" You Have " + attempts + " Out Of 4 Attempts Left");
+    }
+
+
+
 }
-alert(score)
-alert('my favorite cars are Mercede,FERRARI, PORSCHE,DACIA SANDERO')
+
+
+var cars = ['Mercedes', 'FERRARI', 'PORSCHE', 'DACIA SANDERO'];
+var answer7;
+var attempts = 6;
+var flag = true
+while (attempts > 0 && flag == true) {
+    answer7 = prompt('what is my favorite car?')
+    for (var index = 0; index < cars.length; index++) {
+
+
+
+        if (cars[index].toLowerCase() === answer7.toLowerCase()) {
+            alert('correct answer!');
+            score++;
+            flag = false;
+            break;
+
+        }
+
+
+
+
+    }
+
+    --attempts;
+    alert(" You Have " + attempts + " out of 6 Attempts Left");
+
+}
+alert("You Scored " + score + " out of 7 ")
+
 confirm('okay thats it ...thank u dear and welcome again!')
