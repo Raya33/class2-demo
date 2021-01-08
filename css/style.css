@@ -1,35 +1,53 @@
- h2{
-     background-image:url("https://scx2.b-cdn.net/gfx/news/hires/2018/2-ocean.jpg" );
-     background-size: cover;
-     height: 100px;
-     color: beige;
- }
+  
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: rgb(105, 116, 105);
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    body {
+      background-image: url(https://womenss.net/wp-content/uploads/2019/05/843.jpg);
+      color: cornsilk;
+    }
 
- img{
-     height: 100px;
-     border: beige;
- }
- 
-h1{
-    background-image: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-920116,resizemode-1,msid-66950888/magazines/travel/wish-to-enjoy-a-spectacular-sunrise-sunset-well-tell-you-where-to-go.jpg");
-    background-size: cover;
-    height: 100px;
-    color: black;
 
-}
+.elem {
+    background: orange;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    animation: moveToLeft 5s linear infinite;
+    animation-delay: 1000ms;
+  }
 
-p{
-background-color: black;
-color: rgb(56, 121, 59);
-}
+  @keyframes moveToLeft {
+    0% {
+      transform: translateX(0px);
+      background: linear-gradient(
+        to right,
+        #ff8177 0%,
+        #ff867a 0%,
+        #ff8c7f 21%,
+        #f99185 52%,
+        #cf556c 78%,
+        #b12a5b 100%
+      );
+    }
+    25% {
+      transform: translateX(400px);
+      background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    50% {
+      transform: translateY(200px) translateX(400px);
+      background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
 
-h3{
-    background-color: darkmagenta;
-    color: black;
-}
-
-footer{
-   background-color: cadetblue;
-   color:black;
-    
-}
+    75% {
+      transform: translateX(0px) translateY(200px);
+      background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
